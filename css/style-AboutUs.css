@@ -1,0 +1,67 @@
+li:nth-child(3) > a{
+	color: royalblue;
+}
+
+/*Main content styling*/
+.MainDiv {
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(to left, rgba(4, 0, 133, 0.7), rgba(4, 0, 133, 0.5)), url("../images/MundoEtesc-MainImg.png");
+	background-size: cover;
+}
+
+.mainTextDiv {
+	position: absolute;
+	text-align: center;
+	color: white;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.mainTextDiv h1 {
+	font-size: 46px;
+}
+.mainTextDiv p {
+	margin-top: 20px;
+	font-size: 23px;
+}
+
+.AboutUs-sectionDiv {
+	/*height: 200vh;*/
+	margin-top: 75px;
+	width: 100%;
+	text-align: center;
+    color: black;
+}
+
+.AboutUs-ContentDiv {
+
+}
+
+.row {
+	margin: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-col {
+	flex-basis: 31%;
+	background: #c9d6ff;
+	border-radius: 10px;
+	padding: 75px 12px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+
+.about-col:hover {
+	box-shadow: 0 0 20px 0;
+}
+
+@media (max-width: 700px) {
+
+	.row{
+		flex-direction: column;
+	}
+}

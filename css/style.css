@@ -1,0 +1,13 @@
+li:nth-child(1) > a{
+	color: royalblue;
+}
+
+/*Main tag Content*/
+.MainClass-div {
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	background: url("images/MundoEtesc-MainImg.png");
+	font-family: sans-serif;
+}
+

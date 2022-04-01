@@ -1,0 +1,18 @@
+/*Footer*/
+.footer {
+	/*position: absolute;
+	bottom: 0;*/
+	width: 100%;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.footer h4 {
+	margin-bottom: 10px;
+	margin-top: 20px;
+	font-weight: 600;
+}
+
+.footerP {
+	color: rgba(0, 0, 0, 0.5);
+}
