@@ -3,11 +3,110 @@ li:nth-child(1) > a{
 }
 
 /*Main tag Content*/
-/*.MainClass-div {
+.MainClass-div {
 	height: 100vh;
 	width: 100%;
+	background: linear-gradient(to left, rgba(12,0,255, 0.3), rgba(12,0,255, 0.3)), url("../images/Main-Page-First-img.jpg");
+	background-size: cover;
+}
+.MainClass-SectionOnTop {
 	position: absolute;
-	background: url("images/MundoEtesc-MainImg.png");
-	font-family: sans-serif;
-}*/
+	top:50%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+	background: rgba(240, 240, 240, 1.0);
+	width: 500px;
+	height: 300px;
+	border-radius: 10px;
+	text-align: center;
+}
 
+.MainClass-SectionOnTop h1{
+	margin-top: 50px;
+}
+.MainClass-SectionOnTop a i {
+	position: relative;
+	color: steelblue;
+	font-size: 60px;
+	margin-top: 60px;
+}	
+
+.MainClass-section {
+	width: 50%;
+	text-align: center;
+	margin: auto;
+	padding-top: 100px;
+}
+.MainClass-section p {
+	margin-bottom: 40px;
+}
+.FlexContainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.artigosItems {
+	flex-basis: 31%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	background: #bde0fe;
+	text-align: left;
+	padding: 25px;
+	cursor: pointer;
+	display: flex;
+}
+.artigosItems:hover {
+
+}
+.artigosItems img{
+	float: left;
+ 	height: 100px;	
+ 	margin-right: 20px;
+}
+
+.hero-btn {
+	display: inline-block;
+	text-decoration: none;
+	color: #000;
+	border: 1px solid #000;
+	padding: 12px 34px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.hero-btn:hover {
+	background: steelblue;
+	color: white;
+}
+@media (max-width: 700px) {
+	.MainClass-SectionOnTop {
+		top:50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 300px;
+		height: 300px;
+	}
+	.MainClass-SectionOnTop a i {
+		margin-top: 20px;
+	}
+
+	.MainClass-section {
+		width: 75%;
+	}
+
+	.artigosItems {
+		flex-basis: 10%;
+		border-radius: 10px;		
+		text-align: left;
+		padding: 15px;
+		cursor: pointer;
+		display: flex;
+	}
+	.artigosItems img{
+		float: none;	
+	 	width: 150px;
+	 	margin-top: 20px;
+	}
+
+}
