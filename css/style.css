@@ -52,14 +52,15 @@ li:nth-child(1) > a{
 	flex-basis: 31%;
 	border-radius: 10px;
 	margin-bottom: 5%;
-	background: #bde0fe;
+	background: #a6d4fc;
 	text-align: left;
 	padding: 25px;
 	cursor: pointer;
 	display: flex;
+	transition: 0.5s;
 }
 .artigosItems:hover {
-
+	background: #51abfa;
 }
 .artigosItems img{
 	float: left;

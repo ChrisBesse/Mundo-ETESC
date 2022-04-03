@@ -112,8 +112,9 @@ nav .fa {
 		background: black;
 		display: block;
 		margin: auto;
-		transition: 0.5s;
+		transition: 0.2s;
 	}
+	
 	.nav-links ul li a:hover::after,
 	.nav-links ul li a:hover{
 		width: 100%;
