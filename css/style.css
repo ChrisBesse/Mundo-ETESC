@@ -107,11 +107,10 @@ li:nth-child(1) > a{
 		cursor: pointer;
 		display: flex;
 	}
-	.artigosItems img{
-		float: none;	
+	.artigosItems img{	
 		position: relative;
 
-	 	width: 150px;
+	 	height: 100px;
 	 	margin-top: 20px;
 	}
 
