@@ -83,6 +83,24 @@ li:nth-child(1) > a{
 	background: steelblue;
 	color: white;
 }
+
+.btn-SaibaMais {
+	display: inline-block;
+	text-decoration: none;
+	color: #000;
+	border: 1px solid #000;
+	padding: 5px;
+	background: #1b3d5b;
+	color: #fff;
+	position: relative;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.btn-SaibaMais:hover {
+	background: steelblue;
+	color: white;
+}
+
 @media (max-width: 700px) {
 	.MainClass-SectionOnTop {
 		top:50%;
@@ -105,7 +123,7 @@ li:nth-child(1) > a{
 		text-align: left;
 		padding: 15px;
 		cursor: pointer;
-		display: flex;
+		flex-direction: column;
 	}
 	.artigosItems img{	
 		position: relative;
