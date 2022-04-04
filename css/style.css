@@ -35,7 +35,7 @@ li:nth-child(1) > a{
 }	
 
 .MainClass-section {
-	width: 50%;
+	width: 700px;
 	text-align: center;
 	margin: auto;
 	padding-top: 100px;
@@ -65,7 +65,7 @@ li:nth-child(1) > a{
 .artigosItems img{
 	float: left;
  	height: 150px;	
- 	margin-right: 20px;
+ 	margin-right: 10px;
 }
 
 .hero-btn {
@@ -92,7 +92,7 @@ li:nth-child(1) > a{
 	padding: 5px;
 	background: #1b3d5b;
 	color: #fff;
-	position: relative;
+	position: sticky;
 	cursor: pointer;
 	transition: 0.5s;
 }
@@ -117,19 +117,32 @@ li:nth-child(1) > a{
 		width: 75%;
 	}
 
+	.FlexContainer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
 	.artigosItems {
 		flex-basis: 10%;
 		border-radius: 10px;		
-		text-align: left;
-		padding: 15px;
-		cursor: pointer;
+		text-align: center;
+		justify-content: center;
+		padding: 10px;
+		display: flex;
 		flex-direction: column;
 	}
-	.artigosItems img{	
-		position: relative;
-
-	 	height: 100px;
-	 	margin-top: 20px;
+	.artigosItems-img{	
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		height: 150px;
+	 	margin-top: 10px;
+		margin-bottom: 10px;
 	}
+	
+	.btn-SaibaMais {
+		margin-bottom: 15px;
 
+	}
 }
