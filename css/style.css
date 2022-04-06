@@ -92,8 +92,8 @@ li:nth-child(1) > a{
 .hero-btn {
 	display: inline-block;
 	text-decoration: none;
-	color: #000;
-	border: 1px solid #000;
+	color: var(--primaryMain-color);
+	border: 1px solid var(--primaryMain-color);
 	padding: 12px 34px;
 	background: transparent;
 	position: relative;
