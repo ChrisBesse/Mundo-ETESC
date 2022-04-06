@@ -6,7 +6,7 @@
   	<meta name="keywords" content="Mundo, ETESC, jornal, Portugues, 3210">
   	<meta name="author" content="Christiano Besse">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="images/MundoETESC_websitelogo_64x.png" type="image/x-icon">
+	<link rel="shortcut icon" href="../images/MundoETESC_websitelogo_64x.png" type="image/x-icon">
 	<title>Artigo Nome</title>
 	<link rel="stylesheet" type="text/css" href="../css/css-Header.css">
 	<link rel="stylesheet" type="text/css" href="../css/style-Publications.css">
@@ -20,12 +20,13 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
 
+	<script type="text/javascript" src="../script/index-MAIN.js" async></script>
 	<script type="text/javascript" src="../script/index-Publications.js" async></script>
 </head>
-<body>
-	<section class="HeaderClass">
+<body id="body">
+	<header class="HeaderClass">
 		<nav>
-			<img src="../images/MundoETESC2.png" alt="ERRO" id="Main-logo-icon">
+			<img src="../images/MundoETESC2.png" alt="Imagem Logo" id="Main-logo-icon">
 			<div class="nav-links" id="navLinks">
 				<i class="fa fa-times" onclick="hideMenu()"></i>
 				<ul>
@@ -36,15 +37,40 @@
 			</div>
 		<i class="fa fa-bars" onclick="showMenu()"></i>
 		</nav>
-	</section>
+	</header>
+
+	<main class="MainClassContainer">
+		<article class="MainContentArticle">
+			<div class="MainContentArticleDiv">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis volutpat mauris. Vivamus quam nunc, mattis sed odio eu, vulputate dictum velit. Maecenas imperdiet nisi massa, sit amet vehicula mi vulputate in. Aliquam consequat maximus mattis. Sed vitae nisi a ipsum iaculis gravida sagittis nec nisi. Maecenas ac aliquam odio, ut finibus ipsum. Cras finibus diam blandit, feugiat nibh vel, mollis ipsum. In auctor metus quis interdum suscipit. Maecenas semper luctus odio, a lobortis erat semper at.</p>
+				<p>Vestibulum vehicula magna massa, a feugiat ex suscipit a. Aenean eget nulla non mi rhoncus feugiat. Donec euismod et eros eget gravida. Nullam tempus, nunc eget varius maximus, leo diam rutrum metus, vel feugiat nibh nisi eget nulla. In vel egestas lectus, non sodales purus. Morbi euismod nulla vel velit porttitor cursus. Cras gravida gravida tortor, imperdiet varius sem. Nunc id pellentesque neque. Nulla eu vulputate velit. Praesent feugiat lacus in nisl rhoncus, eget iaculis ante iaculis. Nullam ornare lorem vel tincidunt tristique.</p>
+				<p>Proin facilisis finibus elit, sed laoreet lectus pharetra ut. Curabitur ac massa sed orci facilisis pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam a nibh dignissim, congue lectus ac, molestie nisi. Proin id faucibus lectus. Aenean euismod, massa quis ornare sollicitudin, nisl ipsum eleifend nulla, vel viverra sem enim mattis ligula. Maecenas vel ex at leo mollis varius. Nullam posuere porttitor ex, vitae mattis turpis hendrerit sed. Etiam vestibulum purus ut porta lacinia. Nullam egestas urna a ante efficitur sagittis. Suspendisse neque libero, venenatis vitae augue luctus, porttitor consectetur enim. Curabitur ac rutrum mauris. Nullam aliquam dignissim erat, quis faucibus risus pulvinar a. Fusce a lorem sed mi vestibulum bibendum vel quis libero.</p>
+				<h3>Lorem ipsum dolor sit.</h3>
+				<p>Donec ultricies tempus elit. Nullam in accumsan leo. Cras vel efficitur eros, non dignissim lacus. Nam fermentum mauris non sem pretium, sed dapibus leo eleifend. Suspendisse placerat tortor sit amet magna volutpat vehicula. Nunc eu gravida risus, ut facilisis urna. Nulla facilisi. Sed ut augue sapien. Cras iaculis tortor vel enim placerat aliquam. Morbi non odio eget tortor consequat bibendum. Donec non sapien felis. Vestibulum non sapien dictum, fringilla tellus id, rhoncus turpis. Nam commodo ipsum sed diam euismod bibendum. Suspendisse efficitur purus non lectus ultrices tristique. Nulla venenatis semper semper. Sed quis velit nec est euismod vehicula a ut libero.</p>
+				<p>Nulla quis ante magna. Nam porta sagittis magna vitae ultricies. Vestibulum ac est scelerisque, viverra sapien in, fermentum nibh. Nam in turpis finibus, interdum dolor eget, dictum augue. Donec sapien magna, egestas molestie leo gravida, posuere porttitor lorem. Quisque lorem mauris, tempor eget laoreet quis, semper id velit. Sed id tristique nisi. Donec fermentum libero nibh, vel egestas neque sollicitudin eget. Praesent sit amet dui justo. Donec tincidunt ornare velit a feugiat. Praesent efficitur sem vel tincidunt condimentum. Suspendisse mattis neque id tellus venenatis laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo vestibulum elit nec malesuada.</p>
+				<p>Nunc aliquam viverra mi, at iaculis tortor porta eget. Phasellus lorem leo, accumsan sit amet risus sit amet, cursus rutrum libero. Sed ut mi sem. Mauris pulvinar eros nibh, vel molestie enim pretium non. Sed molestie augue lectus. Nulla a accumsan tellus. Nulla et ex elit. Vivamus maximus pellentesque ornare. Fusce consectetur iaculis justo a dignissim. Integer feugiat nunc nulla, sed efficitur est mattis sed. Pellentesque eu ligula a justo accumsan luctus non vel turpis. Ut nec tortor dui.</p>
+				<p>Nunc volutpat nunc et fermentum tempus. Praesent eu nulla tristique, vehicula sem nec, accumsan sem. Vestibulum tortor urna, rhoncus sed auctor sed, mattis vulputate erat. Donec eleifend fermentum venenatis. Fusce euismod augue libero, id aliquam erat tincidunt quis. Etiam fringilla leo at bibendum porttitor. Curabitur volutpat, nulla a vehicula dapibus, ex lacus porttitor elit, a interdum est orci laoreet lacus.</p>
+				<h3>Lorem, ipsum.</h3>
+				<p>Sed turpis augue, facilisis ut massa et, aliquam dictum tortor. Fusce nec quam sagittis nisl dapibus ultricies. Etiam aliquam arcu sit amet augue feugiat, a consequat purus viverra. Mauris id enim suscipit, semper urna quis, interdum sem. Vestibulum vel fermentum nisi. Proin vel massa a ipsum porttitor euismod. Duis interdum et nunc et fermentum. Ut ac pellentesque dui, ac finibus dui.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laudantium, et sit harum dolor modi quaerat deserunt, atque quod! Deleniti necessitatibus velit exercitationem quidem commodi minima rerum neque omnis possimus.</p>
+				
+			</div>
+		</article>	
+
+		<aside class="AsideContent">
+			<h2>Texto feito por: <br> asdas, dasddg</h2>
+			
+		</aside>
+	</main>
 
 	<footer class="footer">
 		<h4>Sobre o projeto</h4>
-		<p>Projeto escolar criado pelo professor de portugues Gustavo na escola Faetec de Santa Cruz.<br>A Turma encarregada é a 3210 de informatica de 2022</p>
+		<p>Projeto escolar criado pelo professor de portugues Gustavo na escola Faetec de Santa Cruz</p>
 		<div class="icons">
 			<!-- <i class="fa fa-facebook"></i> -->
 			<a href="https://github.com/Gyaaaaaaan/Mundo-ETESC-WebSite" target="_blank"><i class="fa fa-github"></i></a>
 		</div>
+		<p>©2022 Gyaan · <a href="AboutUs.html">Sobre</a> · <a href="#body">Ir Para o topo</a></p>
 		<p class="footerP">Website feito por Christiano Besse da Silva</p>
 	</footer>
 </body>

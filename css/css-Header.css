@@ -4,7 +4,10 @@
 	font-family: "Noto Sans", sans-serif;
 }
 
-
+body{
+	background: var(--Secondary-color);
+	transition: all 0.2s ease-in-out;
+}
 ::-webkit-scrollbar {
 	width: 10px;
 }
@@ -25,13 +28,13 @@
 	font-family: sans-serif;
 	/*position: relative;*/
 	position: fixed;
-	background: rgba(247,247,247, 1.0);
+	background: var(--primaryHeader-color);
 	z-index: 100;
-	transition: 0.5s;
+	transition: all 0.2s ease-in-out;
 
 }
 header.active {
-	background: rgba(247,247,247, 0.75);
+	background: var(--primaryHeader2-color);
 }
 
 nav {
@@ -55,6 +58,7 @@ nav img {
 
 /* STYLING NAV BAR LINKS */
 .nav-links ul li {
+	color: var(--primaryMain-color);
 	display: inline-block;
 	list-style: none;
 	padding: 8px  12px;
@@ -78,6 +82,10 @@ nav img {
 .nav-links ul li a:hover{
 	width: 100%;
 	color: steelblue;
+}
+
+#darktoggle {
+	display: block;
 }
 
 nav .fa {
@@ -130,7 +138,8 @@ nav .fa {
 
 	nav .fa {
 		display: block;
-		color: black;
+		color: var(--primaryMain-color);
+		transition: all 0.2s ease-in-out;
 		padding: 5px;
 		margin: 5px;
 		cursor: pointer;

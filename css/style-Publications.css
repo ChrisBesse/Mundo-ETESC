@@ -1,3 +1,48 @@
-li:nth-child(2) > a{
-	color: royalblue;
+.MainClassContainer {
+	display: flex;
+}
+.MainContentArticle{
+	width: 700px;
+	background: #666666;
+	top: 100px;
+	display: flex;
+	position: relative;
+
+}
+.MainContentArticleDiv{
+	margin: 20px;
+	color: white;
+	text-align: center;
+}
+
+.AsideContent{
+	width: calc(100% - 700px);
+	background: #888888;
+	position: relative;
+	top: 100px;
+	display: flex;
+	right: 0;
+
+}
+
+@media (max-width: 1000px){
+	.MainClassContainer {
+		flex-direction: column;
+	}
+
+	.MainContentArticle{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+	}
+
+	.AsideContent{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+	}
 }

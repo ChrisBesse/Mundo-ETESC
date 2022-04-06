@@ -36,11 +36,25 @@ window.onscroll = function(){
 
 }
 
+// Dark mode toggle code
+var darktoggle = document.getElementById("darktoggle");
+// var logo = document.getElementById("logo");
 
+darktoggle.onclick = function() {
+    document.body.classList.toggle("dark-theme");
+    if (document.body.classList.contains("dark-theme")) {
+        darktoggle.innerHTML = "Light mode"
 
+        // icon.src = "../img/SunIcon.png"
+        // logo.src = "../img/logoWhite.png"
+    } else {
+        darktoggle.innerHTML = "Dark mode"
 
+        // icon.src = "../img/MoonIcon.png"
+        // logo.src = "../img/MainIcon.png"
+    }
 
-
+}
 
 
 

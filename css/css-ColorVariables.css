@@ -1,7 +1,18 @@
 /*Color Variables*/
-:root {
-	--primaryHeader-color: rgba(247,247,247, 0.85);
-	--primaryMain-color: black;
 
-	--secondary-color: #111117;
+/*#E6F4F1 #002974 #198AE7*/
+:root {
+	--primaryHeader-color: rgba(247,247,247, 1);
+	--primaryHeader2-color: rgba(247,247,247, 0.75);
+	--primaryMain-color: black;
+	--Secondary-color: #E6F4F1;
+
+}
+
+.dark-theme{
+	--primaryHeader-color: rgba(20, 33, 61, 1);
+	--primaryHeader2-color: rgba(20, 33, 61, 0.75);
+	--primaryMain-color: white;
+	--Secondary-color: #121212;
+
 }

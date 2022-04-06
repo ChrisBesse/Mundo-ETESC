@@ -14,7 +14,8 @@ li:nth-child(1) > a{
 	top:50%;
 	left: 0;
 	transform: translate(30%, -50%);
-	background: rgba(240, 240, 240, 1.0);
+	background: var(--Secondary-color);
+	transition: all 0.2s ease-in-out;
 	width: 500px;
 	height: 300px;
 	border-radius: 10px;
@@ -23,16 +24,24 @@ li:nth-child(1) > a{
 
 .MainClass-SectionOnTop h1{
 	margin-top: 50px;
+	color: var(--primaryMain-color);
+	transition: all 0.2s ease-in-out;
 }
 .MainClass-SectionOnTop p{
 	margin-top: 23px;
+	color: var(--primaryMain-color);
+	transition: all 0.2s ease-in-out;
 }
 .MainClass-SectionOnTop a i {
 	position: relative;
-	color: steelblue;
+	color: #198AE7;
 	font-size: 60px;
 	margin-top: 60px;
+	transition: all 0.5s;
 }	
+.MainClass-SectionOnTop a i:hover {
+	color: #0537E7;
+}
 
 .MainClass-section {
 	width: 700px;
@@ -40,7 +49,14 @@ li:nth-child(1) > a{
 	margin: auto;
 	padding-top: 100px;
 }
-.MainClass-section p {
+
+.MainClass-section > p,
+.MainClass-section > h2 {
+	color: var(--primaryMain-color);
+	transition: all 0.2s ease-in-out;
+}
+
+.MainClass-section > p {
 	margin-bottom: 40px;
 }
 .FlexContainer{
@@ -55,17 +71,22 @@ li:nth-child(1) > a{
 	background: #a6d4fc;
 	text-align: left;
 	padding: 25px;
-	cursor: pointer;
 	display: flex;
 	transition: 0.5s;
 }
 .artigosItems:hover {
-	background: #51abfa;
+	background: #b8e6ff;
 }
-.artigosItems img{
+.artigosItems img {
 	float: left;
  	height: 150px;	
  	margin-right: 10px;
+}
+
+.artigosItems .data {
+	margin: 5px;
+	padding: 1px;
+	color: rgba(0, 0, 0, 0.6);
 }
 
 .hero-btn {
@@ -80,7 +101,7 @@ li:nth-child(1) > a{
 	transition: 0.5s;
 }
 .hero-btn:hover {
-	background: steelblue;
+	background: #198AE7;
 	color: white;
 }
 
@@ -97,11 +118,12 @@ li:nth-child(1) > a{
 	transition: 0.5s;
 }
 .btn-SaibaMais:hover {
-	background: steelblue;
+	background: #198AE7;
 	color: white;
 }
 
 @media (max-width: 700px) {
+
 	.MainClass-SectionOnTop {
 		top:50%;
 		left: 50%;
@@ -111,6 +133,7 @@ li:nth-child(1) > a{
 	}
 	.MainClass-SectionOnTop a i {
 		margin-top: 15px;
+		transition: 0s;
 	}
 
 	.MainClass-section {
