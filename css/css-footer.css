@@ -7,11 +7,13 @@
 	text-align: center;
 	padding-top: 50px;
 }
-
+.footer p {
+	font-size: 15px;
+}
 .footer h4 {
-	margin-bottom: 10px;
+	margin-bottom: 4px;
 	margin-top: 20px;
-	font-weight: 600;
+	font-weight: 400;
 }
 
 .footerP {
@@ -21,15 +23,22 @@
 
 .icons .fa {
 	color: steelblue;
-	font-size: 25px;
+	font-size: 20px;
 	margin: 0 13px;
 	cursor: pointer;
-	padding: 18px 0;
+	padding: 6px 0;
+}
+
+.footer p > a:link {
+	color: royalblue;
+}
+.footer p > a:visited {
+	color: steelblue;
 }
 
 @media (max-width: 700px) {
-	.footer p {
-		font-size: 15px;
+	.footer P {
+		font-size: 13px;
 	}
 
 }

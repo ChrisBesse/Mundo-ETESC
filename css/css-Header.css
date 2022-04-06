@@ -25,10 +25,13 @@
 	font-family: sans-serif;
 	/*position: relative;*/
 	position: fixed;
-	background: var(--primaryHeader-color);
-	z-index: 1;
+	background: rgba(247,247,247, 1.0);
+	z-index: 100;
+	transition: 0.5s;
 
-
+}
+header.active {
+	background: rgba(247,247,247, 0.75);
 }
 
 nav {
@@ -82,9 +85,12 @@ nav .fa {
 }
 
 @media (max-width: 700px){
+	.HeaderClass {
+		height: 80px;
+	}
 	nav img {
 		margin: 0px;
-		height: 70px;
+		height: 66px;
 	}
 
 	.nav-links ul li{
@@ -98,8 +104,8 @@ nav .fa {
 		width: 200px;
 		top: 0;
 		right: -200px;
-		text-align: left;
-		z-index: 2;
+		text-align: right;
+		z-index: 101;
 		transition: 0.5s;
 	}
 	.nav-links ul li a {
@@ -125,8 +131,15 @@ nav .fa {
 	nav .fa {
 		display: block;
 		color: black;
-		padding: 10px;
-		margin: 10px;
+		padding: 5px;
+		margin: 5px;
 		cursor: pointer;
+		font-size: 30px;
 	}
+	nav .fa-times {
+		color: white;
+		text-align: right;
+	}
+
+
 }	
