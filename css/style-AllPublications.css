@@ -1,3 +1,91 @@
 li:nth-child(2) > a{
 	color: royalblue;
 }
+
+
+body {
+
+}
+
+.MainDiv {
+	width: 100%;
+	height: 500px;
+	background: linear-gradient(rgba(20,150,255, 0.4), rgba(255,255,255, 0.0));
+}
+
+.MainDivOnTop {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -20%);
+}
+.MainDivOnTop h1 {
+	font-size: 50px;
+	white-space: nowrap;
+}
+
+.AllPublication {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.ContentDiv {
+	width: 700px;
+	flex-basis: 31%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	background: #a6d4fc;
+	text-align: left;
+	padding: 25px;
+	display: flex;
+	transition: 0.5s;
+}
+.ContentDiv:hover {
+	background: #b8e6ff;
+}
+.ContentDiv img {
+	float: left;
+ 	height: 150px;	
+ 	margin-right: 10px;
+}
+
+.ContentDiv .data {
+	margin: 5px;
+	padding: 1px;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+
+@media (max-width: 700px) {
+	.MainDivOnTop h1 {
+		font-size: 30px;
+		white-space: nowrap;
+	}
+
+
+	.ContentDiv {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		flex-basis: 10%;
+		border-radius: 10px;		
+		padding: 10px;
+		flex-direction: column;
+	}
+	.ContentDiv-img{	
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		height: 150px;
+	 	margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 400px) {
+	.MainDivOnTop h1 {
+		font-size: 30px;
+		white-space: pre-wrap;
+	}
+}

@@ -14,9 +14,9 @@ li:nth-child(3) > a{
 	position: absolute;
 	text-align: center;
 	color: white;
-	top: 50%;
+	top: 15%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -20%);
 }
 
 .mainTextDiv h1 {

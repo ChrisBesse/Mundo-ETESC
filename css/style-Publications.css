@@ -1,29 +1,67 @@
+
+.Titulo-section {
+	position: relative;
+	width: 100%;
+	top: 100px;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.Titulo-section h1 {
+	font-size: 50px;
+
+}
+.flag-icons {
+	display: inline-block;
+	background: rgba(255, 255, 255, 0.2);
+}
+.flag-icons img {
+	padding: 0 5px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+.flag-icons img:hover {
+	transform: scale(1.5);
+}
+
 .MainClassContainer {
 	display: flex;
 }
 .MainContentArticle{
-	width: 700px;
-	background: #666666;
+	width:1200px;
+	/*background: #666666;*/
 	top: 100px;
 	display: flex;
 	position: relative;
+	margin-bottom: 100px;
 
 }
 .MainContentArticleDiv{
-	margin: 20px;
-	color: white;
-	text-align: center;
+	padding: 50px 70px;
+	color: black;
+	text-align: justify;
+	line-height: 1.7;
+	font-size: 1.2em;
+}
+.MainContentArticleDiv p{
+	padding: 10px 0;
 }
 
 .AsideContent{
 	width: calc(100% - 700px);
-	background: #888888;
+	background: rgb(250, 250, 250);
 	position: relative;
-	top: 100px;
+	top: 150px;
+	border-radius: 10px;
 	display: flex;
-	right: 0;
+	margin-bottom: 100px;
+}
+.AsideContentDiv {
+	padding: 50px 50px;
+	text-align: center;
 
 }
+
 
 @media (max-width: 1000px){
 	.MainClassContainer {
@@ -36,6 +74,9 @@
 		align-items: center;
 		justify-content: center;
 
+	}
+	.MainContentArticleDiv{
+		padding: 20px 30px;
 	}
 
 	.AsideContent{
