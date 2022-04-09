@@ -13,13 +13,14 @@ body{
 	width: 10px;
 }
 ::-webkit-scrollbar-track {
-	background: #001885;
+	background: var(--Secondary-color);
 }
 ::-webkit-scrollbar-thumb {
-  background: #7aadff;
+  background: #1f93ff;
+  border-radius: 7px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #3d88ff;
+  background: #1b66df;
 }
 
 /*Making Header fill the width of the page*/
