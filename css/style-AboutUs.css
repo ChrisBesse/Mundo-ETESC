@@ -14,9 +14,9 @@ li:nth-child(3) > a{
 	position: absolute;
 	text-align: center;
 	color: white;
-	top: 15%;
+	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -20%);
+	transform: translate(-50%, -50%);
 }
 
 .mainTextDiv h1 {
@@ -51,7 +51,7 @@ li:nth-child(3) > a{
 
 .about-col {
 	flex-basis: 31%;
-	background: #a2d2ff;
+	background: var(--LightBlue-color);
 	border-radius: 10px;
 	padding: 20px 12px;
 	margin-bottom: 20px;
@@ -70,7 +70,7 @@ li:nth-child(3) > a{
 	font-weight: 600;
 }
 .divTagAlunosClass {
-	text-align: justify;
+	text-align: left;
 }
 .divTagAlunosClass h2 {
 	text-align: center;

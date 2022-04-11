@@ -1,13 +1,13 @@
+/*Global styling section*/
 * {
 	margin: 0;
 	padding: 0;
-	font-family: "Noto Sans", sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 body{
 	background: var(--Secondary-color);
 	transition: all 0.2s ease-in-out;
-	position: relative;
 }
 ::-webkit-scrollbar {
 	width: 10px;
@@ -91,16 +91,18 @@ nav img {
 	cursor: pointer;
 	border: none;
 	transition: 0.5s;
+	border-radius: 10px;
 }
 #darktoggle:hover {
-	border: 2px solid black;
+	background: var(--primaryMain-color);
+	color: var(--Secondary-color);
 }
 
 nav .fa {
 	display: none;
 }
 
-@media (max-width: 700px){
+@media (max-width: 780px){
 	.HeaderClass {
 		height: 80px;
 	}
@@ -129,6 +131,7 @@ nav .fa {
 	}
 	.nav-links ul li a::after {
 		transition: 0.2s;
+		color: white;
 	}
 	
 	.nav-links ul li a:hover::after,

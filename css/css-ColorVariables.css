@@ -1,20 +1,23 @@
 /*Color Variables*/
 
-/*#E6F4F1 #002974 #198AE7*/
+/*#EFFFFF #00171F #003459 #007EA7 #95E1FF*/
 :root {
-	--primaryHeader-color: rgba(247,247,247, 1);
+	--primaryHeader-color: #EFFFFF;
 	--primaryHeader2-color: rgba(247,247,247, 0.75);
-	--primaryMain-color: black;
-	--Secondary-color: #E6F4F1;
-	/*--secondaryDark-color:  white;*/
+	--primaryMain-color: #00171F;
+	--Secondary-color: #fff;
+	--DarkBlue-color: #003459;
+	--DarkBlue2-color: #007EA7;
+	--LightBlue-color: #95E1FF;
+	--LightBlue2-color: #198AE7;
 
 }
 
 .dark-theme{
 	--primaryHeader-color: rgba(20, 33, 61, 1);
 	--primaryHeader2-color: rgba(20, 33, 61, 0.75);
-	--primaryMain-color: white;
-	--Secondary-color: #04030d;
-	/*--secondaryDark-color: #333533;*/
+	--primaryMain-color: #fff;
+	--Secondary-color: #00171F;
+	
 
 }

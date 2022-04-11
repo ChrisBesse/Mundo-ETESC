@@ -5,23 +5,39 @@
 	top: 100px;
 	text-align: center;
 	padding: 30px 0;
+	color: var(--primaryMain-color);
 }
 
 .Titulo-section h1 {
 	font-size: 50px;
+	padding: 5px;
 
 }
 .flag-icons {
+	margin-top: 5px;
+	border-radius: 10px;
 	display: inline-block;
-	background: rgba(255, 255, 255, 0.2);
+	background: rgba(10, 100, 255, 0.5);
 }
 .flag-icons img {
-	padding: 0 5px;
+	padding: 4px 6px;
 	cursor: pointer;
 	transition: 0.2s;
 }
 .flag-icons img:hover {
 	transform: scale(1.5);
+}
+
+.Titulo-Section-darktoggle {
+	list-style: none;
+	font-size: 25px;
+	padding: 5px 5px 0 5px;
+	margin-left: 20px;
+	cursor: pointer;
+	color: var(--Secondary-color);
+	background: var(--primaryMain-color);
+	border-radius: 10px;
+	display: none;
 }
 
 .MainClassContainer {
@@ -38,9 +54,9 @@
 }
 .MainContentArticleDiv{
 	padding: 50px 70px;
-	color: black;
-	text-align: justify;
-	line-height: 1.7;
+	color: var(--primaryMain-color);
+	/*text-align: justify;*/
+	line-height: 1.5;
 	font-size: 1.2em;
 }
 .MainContentArticleDiv p{
@@ -49,17 +65,24 @@
 
 .AsideContent{
 	width: calc(100% - 700px);
-	background: rgb(250, 250, 250);
+	background: var(--primaryHeader-color);
 	position: relative;
 	top: 150px;
-	border-radius: 10px;
+	border-radius: 10px 0 0 10px;
 	display: flex;
 	margin-bottom: 100px;
 }
 .AsideContentDiv {
 	padding: 50px 50px;
 	text-align: center;
-
+	color: var(--primaryMain-color);
+}
+.AsideContentDiv img {
+	height: 200px;
+	border-radius: 50%;
+}
+.AsideContentDiv ul li {
+	list-style: none;
 }
 
 
@@ -73,6 +96,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		/*text-align: center;*/
 
 	}
 	.MainContentArticleDiv{
@@ -80,10 +104,29 @@
 	}
 
 	.AsideContent{
+		background: var(--primaryHeader-color);
+		border-radius: 0;
 		width: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 
 	}
+}
+
+@media (max-width: 780px) {
+	.Titulo-section h1 {
+		font-size: 30px;
+	}
+	.Titulo-Section-darktoggle {
+		display: inline-block;
+	}
+
+
+}
+@media (max-width: 370px) {
+	.AsideContentDiv {
+		padding: 0;
+	}
+
 }
