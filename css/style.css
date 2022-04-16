@@ -65,7 +65,7 @@ li:nth-child(1) > a{
 	flex-direction: column;
 	justify-content: space-between;
 }
-.artigosItems {
+.ContentDiv {
 	flex-basis: 31%;
 	border-radius: 10px;
 	margin-bottom: 5%;
@@ -75,16 +75,16 @@ li:nth-child(1) > a{
 	display: flex;
 	transition: 0.5s;
 }
-.artigosItems:hover {
+.ContentDiv:hover {
 	background: #b8e6ff;
 }
-.artigosItems img {
+.ContentDiv img {
 	float: left;
  	height: 150px;	
  	margin-right: 10px;
 }
 
-.artigosItems .data {
+.ContentDiv .data {
 	margin: 5px;
 	padding: 1px;
 	color: rgba(0, 0, 0, 0.6);
@@ -148,7 +148,7 @@ li:nth-child(1) > a{
 		justify-content: center;
 	}
 
-	.artigosItems {
+	.ContentDiv {
 		flex-basis: 10%;
 		border-radius: 10px;		
 		text-align: center;
@@ -157,7 +157,7 @@ li:nth-child(1) > a{
 		display: flex;
 		flex-direction: column;
 	}
-	.artigosItems-img{	
+	.ContentDiv-img{	
 		display: flex;
 		text-align: center;
 		justify-content: center;

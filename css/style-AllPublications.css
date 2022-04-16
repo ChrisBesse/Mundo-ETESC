@@ -5,18 +5,30 @@ li:nth-child(2) > a{
 .MainDiv {
 	width: 100%;
 	height: 500px;
-	background: linear-gradient(rgba(20,150,255, 0.4), rgba(255,255,255, 0.0));
+	background: linear-gradient(rgba(0, 213, 255, 0.43), rgba(255,255,255, 0.0));
+	margin-bottom: 165px;
+
 }
 
 .MainDivOnTop {
 	position: absolute;
-	top: 20%;
+	top: 30%;
 	left: 50%;
-	transform: translate(-50%, -20%);
+	transform: translate(-50%, -30%);
 }
 .MainDivOnTop h1 {
 	font-size: 50px;
 	white-space: nowrap;
+	text-decoration: none;
+	background-image: linear-gradient(90deg,rgb(5, 238, 255), rgb(51, 0, 255));
+	background-size: 0% 10px;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	transition: background-size 300ms ease-in-out 30ms;
+
+}
+.MainDivOnTop h1:hover {
+	background-size: 100% 10px;
 }
 
 .AllPublication {
@@ -25,15 +37,14 @@ li:nth-child(2) > a{
 	align-items: center;
 	justify-content: center;
 	/*justify-content: space-between;*/
-	grid-gap: 20px;
-
+	column-gap: 20px;
 }
 
 .ContentDiv {
-	/*width: 700px;*/
+	min-width: 45%;
 	/*flex-basis: 70%;*/
 	border-radius: 10px;
-	margin-bottom: 5%;
+	margin-bottom: 2%;
 	background: var(--LightBlue-color);
 	text-align: left;
 	padding: 25px;
@@ -73,14 +84,51 @@ li:nth-child(2) > a{
 	color: white;
 }
 
+/* hide class for search engine */
+.hide-cards {
+	display: none;
+}
+
+/* Search bar styling */
+.search-bar {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.search-bar label {
+	display: block;
+	text-align: center;
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+.search-bar input {
+	height: 40px;
+	width: 650px;
+	border-radius: 20px;
+	padding: 5px 15px;
+	font-size: 1.35em;
+	background: #d3ffff51;
+	text-align: center;
+	transition: all 500ms ease;
+
+}
+.search-bar input:hover,
+.search-bar input:focus {
+	background: #d3ffff;
+}
 
 @media (max-width: 700px) {
+	.hide-cards {
+		display: none;
+	}
 	.MainDivOnTop h1 {
 		font-size: 35px;
 		white-space: nowrap;
 	}
 	.AllPublication{
 		flex-direction: column;
+		margin-bottom: 0;
 	}
 
 	.ContentDiv {
@@ -89,7 +137,7 @@ li:nth-child(2) > a{
 		text-align: center;
 		justify-content: center;
 		width: calc(100% - 40px);
-		margin-bottom: 0;
+		margin-bottom: 5%;
 		flex-basis: 10%;
 		border-radius: 10px;		
 		padding: 10px;
@@ -106,12 +154,27 @@ li:nth-child(2) > a{
 	.btn-SaibaMais {
 		margin-bottom: 10px;
 	}
+
+	.search-bar input {
+		width: 350px;
+	}
+
 }
 
 @media (max-width: 378px) {
+	.hide-cards {
+		display: none;
+	}
 	.MainDivOnTop h1 {
 		font-size: 30px;
 		white-space: pre-wrap;
 		text-align: center;
+	}
+
+	.search-bar label {
+		font-size: 1.3em;
+	}
+	.search-bar input {
+		width: 100%;
 	}
 }
