@@ -95,6 +95,8 @@ li:nth-child(2) > a{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	margin-top: 100px;
+
 }
 .search-bar label {
 	display: block;
@@ -108,7 +110,7 @@ li:nth-child(2) > a{
 	border-radius: 20px;
 	padding: 5px 15px;
 	font-size: 1.35em;
-	background: #d3ffff51;
+	background: #ffffff;
 	text-align: center;
 	transition: all 500ms ease;
 
@@ -176,5 +178,13 @@ li:nth-child(2) > a{
 	}
 	.search-bar input {
 		width: 100%;
+	}
+}
+
+@media (max-height: 350px) {
+	.MainDivOnTop {
+		position: absolute;
+		
+		margin: 0 auto;
 	}
 }
