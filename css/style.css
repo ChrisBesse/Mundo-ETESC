@@ -79,6 +79,7 @@ li:nth-child(1) > a{
 	background: #b8e6ff;
 }
 .ContentDiv img {
+	box-shadow: 0 0 10px #55e6ff;
 	float: left;
  	height: 150px;	
  	margin-right: 10px;
