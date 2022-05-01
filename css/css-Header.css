@@ -124,10 +124,11 @@ nav .fa {
 		right: -200px;
 		text-align: right;
 		z-index: 101;
-		transition: 0.5s;
+		transition: 0.3s ease;
 	}
 	.nav-links ul li a {
 		color: white;
+		border-bottom: 3px solid rgba(24, 211, 200, 1.0);
 	}
 	.nav-links ul li a::after {
 		transition: 0.2s;
@@ -151,8 +152,12 @@ nav .fa {
 		font-size: 30px;
 	}
 	nav .fa-times {
+		font-size: 40px;
 		color: white;
 		text-align: right;
+		margin: 20px 0 0 0;
+		background: rgba(25, 220, 111, 0.3);
+
 	}
 
 }	

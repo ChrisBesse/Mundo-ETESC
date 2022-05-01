@@ -7,6 +7,9 @@ li:nth-child(3) > a{
 	height: 100vh;
 	width: 100%;
 	background: linear-gradient(to left, rgba(4, 0, 133, 0.6), rgba(4, 0, 133, 0.6)), url("../images/MundoEtesc-MainImg.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-size: cover;
 }
 
@@ -25,9 +28,10 @@ li:nth-child(3) > a{
 .mainTextDiv p {
 	margin-top: 20px;
 	font-size: 23px;
+	font-weight: 600;
 }
 
-.AboutUs-sectionDiv {
+.AboutUs-textSectionDiv {
 	/*height: 200vh;*/
 	margin-top: 75px;
 	width: 100%;
@@ -40,7 +44,13 @@ li:nth-child(3) > a{
 }
 .AboutUs-ContentDiv p {
 	font-size: 23px;
+	margin: 20px 15px;
 }
+
+/*.AboutUs-MainSection {
+	background: dimgray;
+
+}*/
 
 .row {
 	margin: 5%;
@@ -71,6 +81,10 @@ li:nth-child(3) > a{
 }
 .divTagAlunosClass {
 	text-align: left;
+	/*word-break: break-all; */
+	/*-webkit-hyphens:none;
+	-moz-hyphens: none; 
+	hyphens: none;*/
 }
 .divTagAlunosClass h2 {
 	text-align: center;
@@ -100,4 +114,14 @@ li:nth-child(3) > a{
 		text-align: center;
 	}
 
+}
+
+@media (max-width: 290px) {
+
+	.AboutUs-ContentDiv h2 {
+		font-size: 32px;
+	}
+	.AboutUs-ContentDiv p {
+		font-size: 19px;
+	}
 }
