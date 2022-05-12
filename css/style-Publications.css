@@ -38,7 +38,7 @@
 	color: var(--Secondary-color);
 	background: var(--primaryMain-color);
 	border-radius: 10px;
-	display: none;
+	display: inline-block;
 }
 
 .MainClassContainer {
@@ -60,6 +60,9 @@
 	font-size: 1.2em;
 }
 .MainContentArticleDiv h3{
+	padding: 20px 0 0 0;
+}
+.MainContentArticleDiv h4{
 	padding: 20px 0 0 0;
 }
 .MainContentArticleDiv p{
@@ -97,18 +100,45 @@
 	text-align: center;
 	color: var(--primaryMain-color);
 }
-.AsideContentDiv img {
+
+.aside-content-staff {
+	margin-bottom: 40px;
+}
+
+.aside-content-staff img {
 	height: 200px;
 	border-radius: 50%;
 	padding: 0 0;
 }
-.AsideContentDiv ul li {
+.aside-content-staff ul li {
 	list-style: none;
+}
+
+.aside-content-related figure {
+	padding: 10px;
+	transition: 300ms ease;
+	cursor: pointer;
+}
+.aside-content-related figure:hover {
+	background: #94e2ffa3;
+}
+
+.aside-content-related img {
+	width: 150px;
+}
+.aside-content-related a:link {
+	text-decoration: underline;
+	color: var(--primaryMain-color);
+}
+.aside-content-related a:visited {
+	text-decoration: underline;
+	color: #3b8f8f;
 }
 
 .Source {
 	opacity: 0.85;
-	margin: 20px 0 0 0;
+	margin: 0 0 5px 0;
+	word-break: break-all;
 }
 
 
@@ -144,10 +174,6 @@
 	.Titulo-section h1 {
 		font-size: 30px;
 	}
-	.Titulo-Section-darktoggle {
-		display: inline-block;
-	}
-
 
 	.MainContentArticleDiv-img{
 		/*float: none;
